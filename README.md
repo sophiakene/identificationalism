@@ -1,7 +1,9 @@
 # identificationalism
-Baseline implementation for the identificationalism kaggle challenge. Please use Python 3.X to run the script.
+Baseline implementation for the **identificationalism** kaggle challenge.
 
 ## Installation and Requirements
+
+Please use Python 3.X to install libraries and run the code.
 
 Clone the repository to your local computer or one of our servers:
 
@@ -17,12 +19,14 @@ But see http://scikit-learn.org/stable/install.html for more detailed instructio
 
 To train a baseline model, use
 
-    python baseline.py --train --model model_dummy.pkz --data train.csv --verbose --classifier dummy
+    python baseline.py --train --model model_dummy.pkz --data csv/train.csv --verbose
 
 To use a trained model to make predictions for the test samples:
 
-    python baseline.py --predict --samples test.csv --model model_dummy.pkz > sandboxSubmission_dummy.csv
+    python baseline.py --predict --samples csv/test_no_labels.csv --model model_dummy.pkz > dummy_submission.csv
 
 For other options, use `--help`:
 
     python baseline.py --help
+
+And see the `examples` folder for a sample model and sample submission.
